@@ -5,17 +5,18 @@ import Carousel from 'react-bootstrap/Carousel';
 class Book extends React.Component {
     render() {
         return(
-            <Carousel.Item>
+            <>
                 <img
                     className="d-block w-100"
-                    src="holder.js/800x400?text=First slide&bg=373940"
-                    alt="First slide"
+                    src="https://via.placeholder.com/600x400/673a8a/e0e0e0"
+                    alt="book cover"
                 />
                 <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h3>{`${this.props.title}`}</h3>
+                    <p>{this.props.description}</p>
+                    <p>{this.props.status}</p>
                 </Carousel.Caption>
-            </Carousel.Item>
+            </>
         )
     }
 }

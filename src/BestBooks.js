@@ -14,7 +14,9 @@ class BestBooks extends React.Component {
   /* TODO: Make a GET request to your API to fetch all the books from the database  */
   async componentDidMount() {
     const baseUrl = process.env.REACT_APP_SERVER;
-    const books = await axios.get(`${baseUrl}/books`);
+    const booksResponse = await axios.get(`${baseUrl}/books`);
+    const books = booksResponse.data;
+    console.log(books);
     this.setState({books:books});
   }
 
@@ -26,11 +28,18 @@ class BestBooks extends React.Component {
     return (
       <>
         <h2>My Essential Lifelong Learning &amp; Formation Shelf</h2>
-        <Carousel>
-
-
+        <Carousel className='h-50' >
           {this.state.books.length ? (
-            this.state.books.map((book, i) => <Book key={i} data={book}></Book>)
+            this.state.books.map((book, i) => 
+              <Carousel.Item>
+                <Book 
+                  key={book._id} 
+                  title={book.title}
+                  description={book.description}
+                  status={book.status}
+                />
+              </Carousel.Item>   
+            )
           ) : (
             <h3>No Books Found :(</h3>
           )}
