@@ -5,26 +5,28 @@
 
 ## Overview
 
-Books are life-changing. They have the power to enlighten, educate, entertain, heal, and help us grow. This codebase will serve as the backend for our online bookshelf of future and favorite reads.
+Books are life-changing. They have the power to enlighten, educate, entertain, heal, and help us grow. This codebase will serve as the FrontEnd for our online bookshelf of future and favorite reads.
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+clone the repo, the put npm start in the console
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+react
+bootstrap
+axios
+Javascript
 
 ## Change Log
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+10-03-2022 3:00pm - Application now has a fully-functional Heroku server
 
 ## Estimates
 
-Name of feature: 
+Name of feature: book component
 
-Estimate of time needed to complete: 
+Estimate of time needed to complete: 1 hour
 
-Start time: 
+Start time: 2:30 PST
 
 Finish time: 
 

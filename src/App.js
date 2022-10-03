@@ -1,4 +1,5 @@
 import React from 'react';
+import Profile from './About'
 import Header from './Header';
 import Footer from './Footer';
 import BestBooks from './BestBooks';
@@ -21,6 +22,12 @@ class App extends React.Component {
               element={<BestBooks />}
             >
             </Route>
+            <Route 
+              exact path="/about"
+              element={<Profile />}
+            >
+            </Route>
+
             {/* PLACEHOLDER: add a route with a path of '/about' that renders the `About` component */}
           </Routes>
           <Footer />
