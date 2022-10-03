@@ -18,7 +18,8 @@ Javascript
 
 ## Change Log
 
-10-03-2022 3:00pm - Application now has a fully-functional Heroku server
+10-03-2022 2:40pm - Application now has a fully-functional Netlify deployment
+10-03-2022 3:15pm - Application now displays books on a carousel
 
 ## Estimates
 
@@ -28,9 +29,9 @@ Estimate of time needed to complete: 1 hour
 
 Start time: 2:30 PST
 
-Finish time: 
+Finish time: 3:15
 
-Actual time needed to complete: 
+Actual time needed to complete: 45min
 
 ## Credit and Collaborations
 
