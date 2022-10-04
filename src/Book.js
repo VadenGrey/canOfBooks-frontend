@@ -1,10 +1,10 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-
+import Button from 'react-bootstrap/Button';
 
 class Book extends React.Component {
     render() {
-        return(
+        return (
             <>
                 <img
                     className="d-block w-100"
@@ -14,6 +14,9 @@ class Book extends React.Component {
                 <Carousel.Caption>
                     <h3>{`${this.props.title}`}</h3>
                     <p>{this.props.description}</p>
+                    <Button variant="primary" onClick={this.props.handleDelete}>
+                        Delete Entry
+                    </Button>
                     <p>{this.props.status}</p>
                 </Carousel.Caption>
             </>

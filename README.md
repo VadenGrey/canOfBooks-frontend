@@ -1,7 +1,7 @@
 # Project Name
 
-**Author**: Julian Barker, Mathieu Roberts
-**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
+**Author**: Julian Barker, Mathieu Roberts, Mehtab Riar
+**Version**: 1.1.0
 
 ## Overview
 
@@ -20,6 +20,7 @@ Javascript
 
 10-03-2022 2:40pm - Application now has a fully-functional Netlify deployment
 10-03-2022 3:15pm - Application now displays books on a carousel
+10-04-2022 3:02pm - Add new book, delete entry now added
 
 ## Estimates
 
@@ -33,7 +34,21 @@ Finish time: 3:15
 
 Actual time needed to complete: 45min
 
+<hr>
+
+Name of feature: add & delete entry
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 2:30 PST
+
+Finish time: 3:02 
+
+Actual time needed to complete: 45min
+
 ## Credit and Collaborations
+
+Julian Barker, Mathieu Roberts, Mehtab Riar
 
 ### Team Agreement
 
@@ -61,6 +76,7 @@ Make a list of each person’s strengths.
 
 - Julian - Complex code logic
 - Mathieu - Adaptability
+- Mehtab - Creativity
 
 How can you best utilize these strengths in the development of your application?
 
@@ -70,10 +86,11 @@ In what areas do you each want to develop greater strength?
 
 - Julian - improve at design and UI/UX choices
 - Mathieu - creativity
+- Mehtab - design
 
 Knowing that every person in your team needs to understand the code, how do you plan to approach the day-to-day development?
 
-- We will both be looking at every line of code that gets written, and will not move on unless we both understand the code.
+- We will be looking at every line of code that gets written, and will not move on unless we understand the code.
 
 #### Conflict Resolution
 
