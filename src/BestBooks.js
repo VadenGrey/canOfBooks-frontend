@@ -14,6 +14,7 @@ class BestBooks extends React.Component {
   /* TODO: Make a GET request to your API to fetch all the books from the database  */
   async componentDidMount() {
     const baseUrl = process.env.REACT_APP_SERVER;
+    console.log(baseUrl);
     const booksResponse = await axios.get(`${baseUrl}/books`);
     const books = booksResponse.data;
     console.log(books);
@@ -31,9 +32,8 @@ class BestBooks extends React.Component {
         <Carousel className='h-50' >
           {this.state.books.length ? (
             this.state.books.map((book, i) => 
-              <Carousel.Item>
+              <Carousel.Item key={book._id} >
                 <Book 
-                  key={book._id} 
                   title={book.title}
                   description={book.description}
                   status={book.status}
