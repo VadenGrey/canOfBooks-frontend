@@ -8,9 +8,11 @@
 Books are life-changing. They have the power to enlighten, educate, entertain, heal, and help us grow. This codebase will serve as the FrontEnd for our online bookshelf of future and favorite reads.
 
 ## Getting Started
+
 clone the repo, the put npm start in the console
 
 ## Architecture
+
 react
 bootstrap
 axios
@@ -21,30 +23,45 @@ Javascript
 10-03-2022 2:40pm - Application now has a fully-functional Netlify deployment
 10-03-2022 3:15pm - Application now displays books on a carousel
 10-04-2022 3:02pm - Add new book, delete entry now added
+10-04-2022 2:45pm - Implement updating existing book.
 
 ## Estimates
 
-Name of feature: book component
+### Book component
 
-Estimate of time needed to complete: 1 hour
+Estimate of time needed to complete: 1hr
 
-Start time: 2:30 PST
+Start time: 2:30pm
 
-Finish time: 3:15
+Finish time: 3:15pm
+
+Actual time needed to complete: 45min
+
+<hr />
+
+### Add & delete entry
+
+Estimate of time needed to complete: 1hr
+
+Start time: 2:30pm
+
+Finish time: 3:02pm
 
 Actual time needed to complete: 45min
 
-<hr>
+<hr />
 
-Name of feature: add & delete entry
+### Update entry
 
-Estimate of time needed to complete: 1 hour
+Estimate of time needed to complete: 1hour
 
-Start time: 2:30 PST
+Start time: 1:30pm
 
-Finish time: 3:02 
+Finish time: 2:45pm
 
-Actual time needed to complete: 45min
+Actual time needed to complete: 1hr 15min
+
+<hr />
 
 ## Credit and Collaborations
 

@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import Carousel from 'react-bootstrap/Carousel';
 import Book from './Book.js';
-import Bookform from './BookForm.js'
+import Addform from './AddForm.js'
 
 class BestBooks extends React.Component {
   constructor(props) {
@@ -23,7 +23,6 @@ class BestBooks extends React.Component {
       this.setState({
         books: [...this.state.books, createdBook],
       })
-      console.log(this.state.books);
     } catch (error) {
       console.log("we have an error: ", error);
     }
@@ -45,6 +44,27 @@ class BestBooks extends React.Component {
     }
   }
 
+  handleUpdate = async (book) => {
+    try {
+      console.log('sending for update:',book);
+      const _id = book._id;
+      console.log(_id);
+      const res = await axios.put(`${process.env.REACT_APP_SERVER}/books/${_id}`, book);
+      console.log('Updated book is:', res);
+      // Don't forget .data!
+      const updatedBook = res.data;
+      // update state and render the createdCat
+      const temp = [...this.state.books];
+      const i = temp.findIndex(v => v._id === updatedBook._id);
+      temp[i] = updatedBook;
+      this.setState({
+        books: temp
+      })
+    } catch (error) {
+      console.log("we have an error: ", error);
+    }
+}
+
   /* TODO: Make a GET request to your API to fetch all the books from the database  */
   async componentDidMount() {
     const baseUrl = process.env.REACT_APP_SERVER;
@@ -58,21 +78,18 @@ class BestBooks extends React.Component {
   render() {
 
     /* TODO: render all the books in a Carousel */
-    
-
     return (
       <>
         <h2>My Essential Lifelong Learning &amp; Formation Shelf</h2>
-        <Bookform handleBookCreate={this.handleBookCreate}/>
+        <Addform handleBookCreate={this.handleBookCreate}/>
         <Carousel className='h-50' >
           {this.state.books.length ? (
             this.state.books.map((book, i) => 
               <Carousel.Item key={book._id} >
                 <Book 
-                  title={book.title}
-                  description={book.description}
-                  status={book.status}
-                  handleDelete={() => this.handleDelete(book)}
+                  book={book}
+                  handleDelete={this.handleDelete}
+                  handleUpdate={this.handleUpdate}
                 />
               </Carousel.Item>   
             )
