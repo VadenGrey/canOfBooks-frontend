@@ -1,8 +1,10 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
+import Updateform from './UpdateForm';
 
 class Book extends React.Component {
+
     render() {
         return (
             <>
@@ -12,12 +14,11 @@ class Book extends React.Component {
                     alt="book cover"
                 />
                 <Carousel.Caption>
-                    <h3>{`${this.props.title}`}</h3>
-                    <p>{this.props.description}</p>
-                    <Button variant="primary" onClick={this.props.handleDelete}>
-                        Delete Entry
-                    </Button>
-                    <p>{this.props.status}</p>
+                    <h3>{`${this.props.book.title}`}</h3>
+                    <p>{this.props.book.description}</p>
+                    <Button variant="primary" onClick={() => this.props.handleDelete(this.props.book)}> Delete Entry </Button>
+                    <Updateform book={this.props.book} handleUpdate={this.props.handleUpdate} />
+                    <p>{this.props.book.status}</p>
                 </Carousel.Caption>
             </>
         )

@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 
-class Bookform extends React.Component {
+class Addform extends React.Component {
     constructor(props){
         super(props);
         this.state = {
@@ -61,4 +61,4 @@ class Bookform extends React.Component {
     }
 }
 
-export default Bookform;
+export default Addform;
